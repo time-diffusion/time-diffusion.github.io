@@ -30,7 +30,7 @@
                 <a href="https://github.com/bahjat-kawar/time-diffusion" type="button" class="btn btn-dark"><i class="fab fa-github"></i> Code</a>
                 <!-- <a href="" type="button" class="btn btn-warning btn-colab"><i class="fab fa-google"></i> Colab</a> --><br />
                 <br />
-                <img src="images/figure1.png" class="headline-image"><br />
+                <img src="images/figure1.jpg" class="headline-image"><br />
                 We edit a model based on a source and destination prompt. The edit generalizes to related prompts (green), leaving unrelated ones unaffected (gray).<br /><br />
             </div>
         </div>
@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col">
                 <center><h2>Cross-Attention Layers in Text-to-Image Models</h2></center>
-                <img src="images/cross-attention.png" style="width:300px;float:left;" />
+                <img src="images/cross-attention.jpg" style="width:300px;float:left;" />
                 The user-provided text prompt is input into the text encoder, which tokenizes it and outputs a sequence of token embeddings \(\{\mathbf{c}_{i}\}_{i=1}^{l}\) describing the sentence’s meaning.
                 Then, in order to condition the diffusion model on them, these embeddings are injected at the cross-attention layers of the model. They are projected into keys \(\mathbf{K}\) and values \(\mathbf{V}\), using learned projection matrices \(\mathbf{W}_{K}\) and \(\mathbf{W}_{V}\), respectively. The keys are then multiplied by a query \(\mathbf{Q}\), which represents visual features of the current intermediate image in the diffusion process.
                 This results in an attention map, which is then multiplied by the values \(\mathbf{V}\) to produce the final cross-attention output.
@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col">
                 <center><h2>TIME: Text-to-Image Model Editing</h2></center>
-                <img src="images/time-method.png" style="width:300px;float:right;" />
+                <img src="images/time-method.jpg" style="width:300px;float:right;" />
                 <p>Our method accepts a pair of source and destination text prompts.
                 For each source embedding \(\mathbf{c}_{i}\), we identify the destination embedding that corresponds to the same token, and denote it as \(\mathbf{c}^{*}_{i}\).
                 The keys and values of the destination prompts are calculated as \(\mathbf{k}^{*}_{i} = \mathbf{W}_{K} \mathbf{c}^{*}_{i}\) and \(\mathbf{v}^{*}_{i} = \mathbf{W}_{V} \mathbf{c}^{*}_{i}\).
@@ -83,7 +83,7 @@
             <div class="col">
                 <center><h2>Gender Bias Mitigation</h2></center>
                 <center>
-                    <img src="images/gender-bias.png" style="width:70%;" /><br />
+                    <img src="images/gender-bias.jpg" style="width:70%;" /><br />
                     We apply TIME for gender bias mitigation. For instance, we erase the assumption that most developers are male.
                 </center>
                 <br /><br />
@@ -93,7 +93,7 @@
             <div class="col">
                 <center><h2>Additional Results</h2></center>
                 <center>
-                    <img src="images/extra-results.png" style="width:80%;" /><br />
+                    <img src="images/extra-results.jpg" style="width:80%;" /><br />
                     Please refer to <a href="TIME_paper.pdf">our paper</a> for more results, quantitative evaluation, gender bias mitigation experiments, and more.<br />
                     Please refer to <a href="https://github.com/bahjat-kawar/time-diffusion">our GitHub</a> for implementation using Stable Diffusion and the provided datasets.
                 </center>
