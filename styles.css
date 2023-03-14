@@ -1,0 +1,84 @@
+.headline-image {
+    width:100%;
+}
+.abstract-col {
+    text-align:center;
+    padding: 0px 50px;
+}
+.two-col {
+    text-align:left;
+}
+.author-cell {
+    width:20%;
+    text-align:center;
+}
+.institution-cell {
+    text-align:center;
+}
+.pad-cell {
+    width:15%;
+    text-align:left;
+}
+.eq-cell {
+    text-align:left;
+}
+.marked {
+    background: white;
+    transition: background 2s;
+}
+.marked.active {
+    background: yellow;
+}
+@media screen and (min-width:992px) {
+    .headline-image {
+        width:800px;
+    }
+    .abstract-col {
+        padding: 0px 150px;
+    }
+    .two-col {
+        padding: 0px 30px;
+    }
+    .author-cell {
+        width:14%;
+        text-align:center;
+    }
+    .institution-cell {
+        text-align:center;
+    }
+    .pad-cell {
+        width:29%;
+        text-align:left;
+    }
+}
+.btn-colab {
+    color:white;
+    background:#f9ab00;
+    border-color:#f9ab00;
+}
+.btn-colab:active {
+    color:white;
+    background:#e8710a;
+}
+.btn-colab:hover {
+    color:white;
+    background:#e09000;
+    border-color:#e09000;
+}
+.btn-dark:hover {
+    color:white;
+    background:#000000;
+    border-color:#000000;
+}
+.no-u {
+    text-decoration: none;
+}
+pre {
+    background-color:#eee;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+}
+.table {
+    text-align:center;
+}
