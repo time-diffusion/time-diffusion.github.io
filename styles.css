@@ -51,19 +51,19 @@
         text-align:left;
     }
 }
-.btn-colab {
+.btn-gradio {
     color:white;
-    background:#f9ab00;
-    border-color:#f9ab00;
+    background: rgb(238 116 0);
+    border-color:rgb(238 116 0);
 }
-.btn-colab:active {
+.btn-gradio:active {
     color:white;
     background:#e8710a;
 }
-.btn-colab:hover {
+.btn-gradio:hover {
     color:white;
-    background:#e09000;
-    border-color:#e09000;
+    background:rgb(255 136 20);
+    border-color:rgb(255 136 20);
 }
 .btn-dark:hover {
     color:white;
